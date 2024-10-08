@@ -1,8 +1,11 @@
 @echo off
 setlocal
 
+:: Obtener el nombre del usuario actual
+set USER=%USERNAME%
+
 :: Establecer la ruta
-set "ruta=C:\Users\SITWIFI\Documents\Virtual Machines\MIA+PROMETHEUS"
+set "ruta=C:\Users\%USER%\Documents\Virtual Machines\MIA+PROMETHEUS"
 
 :: Buscar archivos .lck
 echo Buscando archivos .lck en %ruta%...
